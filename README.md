@@ -21,3 +21,5 @@ Section "InputClass"
         Option "TappingButtonMap" "lrm"
 EndSection
 ```
+# Feh Wallpaer
+feh --bg-scale /path/to/image.file
