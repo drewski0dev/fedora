@@ -1,5 +1,5 @@
 # What is this?
-This repo is all about practice for me. First time using Github, as well as daily driving Linux. I decided to go with Fedora for it's rolling releases. My other option was Arch, but decided not to just so I could get comfortable with Linux. I am running this all on a ThinkPad X390.
+This repo is all about practice for me; first time using Github, as well as daily driving Linux. I decided to go with Fedora (i3 Spin) for the rolling releases. The other option was Arch, but I passed just so I could get a little more comfortable with Linux. Doing this on my secondary laptop (ThinkPad X390), but will probably be my main for the rest of the year at least.
 
 # Natural Scrolling
 /usr/share/X11/xorg.conf.d/40-libinput.conf
