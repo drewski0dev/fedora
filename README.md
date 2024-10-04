@@ -1,5 +1,5 @@
-# Fedora I3 Spin | Thinkpad X390
-This repo is all about practice for me. First time using Github, as well as daily driving Linux. I decided to go with Fedora for it's rolling releases. My other option was Arch, but decided not to just so I could get comfortable with Linux. I am running this all on a Thinkpad X390.
+# What is this?
+This repo is all about practice for me. First time using Github, as well as daily driving Linux. I decided to go with Fedora for it's rolling releases. My other option was Arch, but decided not to just so I could get comfortable with Linux. I am running this all on a ThinkPad X390.
 
 # Natural Scrolling
 /usr/share/X11/xorg.conf.d/40-libinput.conf
