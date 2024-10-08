@@ -9,7 +9,7 @@ The device I am using is a ThinkPad X390 running Fedora Linux 40.
 
 ## Touchpad Features
 Two touchpad features I like to have in my environment are **Natural Scrolling** and **Tap to Click**. These are not enabled by default.\
-*To enable these features, adds these lines to your config in `/usr/share/X11/xorg.conf.d/40-libinput.conf` under the InputClass identifer "libinput touchpad catachall"*
+*To enable these features, adds these lines to your config in `/usr/share/X11/xorg.conf.d/40-libinput.conf` under the InputClass identifer "libinput touchpad catchall"*
 ```
         Option "NaturalScrolling" "true"
         Option "Tapping" "on"
