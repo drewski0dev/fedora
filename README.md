@@ -18,7 +18,7 @@ Two touchpad features I like to have in my environment are **Natural Scrolling**
 
 ## Connecting to Wi-Fi in Command Line
 Using `nmcli` you can connect to Wi-Fi from the command line\
-*First, to list possible connections use `nmcli device wifi'*
+*First, to list possible connections use `nmcli device wifi`*
 > nmcli will put you in Less command mode to navigate this list. If you are unfamiliar with this mode, hit 'q' to exit back to the command line.
 
 *Once you've found the Wi-Fi you would like to connect to, use `nmcli device wifi connect "SSID" password "password"`*
