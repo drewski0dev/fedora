@@ -1,30 +1,26 @@
 # What is this?
-This repo is all about practice for me; first time using Github, as well as daily driving Linux. I decided to go with Fedora (i3 Spin) for the rolling releases. The other option was Arch, but I passed just so I could get a little more comfortable with Linux. Doing this on my secondary laptop (ThinkPad X390), but will probably be my main for the rest of the year at least.
+This is my first time daily driving Linux. This is not necessarily a beginner's guide, but I've compiled some things that I found useful in my experience. You'll find here some basic functionality as well as some of my config files for 'ricing' Linux.\
+The device I am using is a ThinkPad X390 running Fedora Linux 40.
 
-![Screenshot_2024-10-03_22-49-00](https://github.com/user-attachments/assets/f906486a-b2ac-4926-bed0-d7726a25a395)
+![Screenshot_2024-10-07_22-03-33](https://github.com/user-attachments/assets/24adff5e-55b8-4972-bc42-8322743a7021)
 
-# Natural Scrolling
-/usr/share/X11/xorg.conf.d/40-libinput.conf
+# General Functionality
+> Some of this may be specific to Fedora's i3 Spin release, and/or X390 components (such as touchpad config files)
+
+## Touchpad Features
+Two touchpad features I like to have in my environment are **Natural Scrolling** and **Tap to Click**. These are not enabled by default.\
+*To enable these features, adds these lines to your config in `/usr/share/X11/xorg.conf.d/40-libinput.conf` under the InputClass identifer "libinput touchpad catachall"*
 ```
-Section "InputClass"
-        Identifier "libinput touchpad catchall"
-        MatchIsTouchpad "on"
-        MatchDevicePath "/dev/input/event*"
-        Driver "libinput"
         Option "NaturalScrolling" "true"
-EndSection
-```
-# Tap To Click
-/usr/share/X11/xorg.conf.d/40-libinput.conf
-```
-Section "InputClass"
-        Identifier "libinput touchpad catchall"
-        MatchIsTouchpad "on"
-        MatchDevicePath "/dev/input/event*"
-        Driver "libinput"
         Option "Tapping" "on"
         Option "TappingButtonMap" "lrm"
-EndSection
 ```
-# Feh Wallpaer
-feh --bg-scale /path/to/image.file
+
+## Connecting to Wi-Fi in Command Line
+Using `nmcli` you can connect to Wi-Fi from the command line\
+*First, to list possible connections use `nmcli device wifi'*
+> nmcli will put you in Less command mode to navigate this list. If you are unfamiliar with this mode, hit 'q' to exit back to the command line.
+
+*Once you've found the Wi-Fi you would like to connect to, use `nmcli device wifi connect "SSID" password "password"`*
+
+I was running into issues connecting to my school's Wi-Fi. The easy solution I found was using `nm-connection-editor` Create a new connection using the SSID of the school Wi-Fi, and edit the Wi-Fi security settings.
