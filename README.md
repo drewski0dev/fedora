@@ -9,7 +9,7 @@ The device I am using is a ThinkPad X390 running Fedora Linux 40.
 
 ## Touchpad Features
 Two touchpad features I like to have in my environment are **Natural Scrolling** and **Tap to Click**. These are not enabled by default.\
-*To enable these features, adds these lines to your config in `/usr/share/X11/xorg.conf.d/40-libinput.conf` under the InputClass identifer "libinput touchpad catchall"*
+*To enable these features, adds these lines to your config in* `/usr/share/X11/xorg.conf.d/40-libinput.conf` *under the InputClass identifer "libinput touchpad catchall"*
 ```
         Option "NaturalScrolling" "true"
         Option "Tapping" "on"
@@ -18,9 +18,10 @@ Two touchpad features I like to have in my environment are **Natural Scrolling**
 
 ## Connecting to Wi-Fi in Command Line
 Using `nmcli` you can connect to Wi-Fi from the command line\
-*First, to list possible connections use `nmcli device wifi`*
+*First, to list possible connections use* `nmcli device wifi`
 > nmcli will put you in Less command mode to navigate this list. If you are unfamiliar with this mode, hit 'q' to exit back to the command line.
 
-*Once you've found the Wi-Fi you would like to connect to, use `nmcli device wifi connect "SSID" password "password"`*
+*Once you've found the Wi-Fi you would like to connect to, use* `nmcli device wifi connect "SSID" password "password"`
 
-I was running into issues connecting to my school's Wi-Fi. The easy solution I found was using `nm-connection-editor` Create a new connection using the SSID of the school Wi-Fi, and edit the Wi-Fi security settings.
+I was running into issues connecting to my school's Wi-Fi. The easy solution I found was using `nm-connection-editor` \
+*Create a new connection using the SSID of the school Wi-Fi, and edit the Wi-Fi security settings.*
